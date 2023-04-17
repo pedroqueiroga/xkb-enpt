@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xkbConfigRegistry SYSTEM "xkb.dtd">
+<xkbConfigRegistry version="1.1">
+  <modelList>
+    <model>
+      <configItem>
+        <name></name>
+        <description></description>
+        <vendor></vendor>
+      </configItem>
+    </model>
+  </modelList>
+  <layoutList>
+    <layout>
+      <configItem>
+        <name>br</name>
+        <!-- Keyboard indicator for Portuguese layouts -->
+        <shortDescription>pt</shortDescription>
+        <description>Portuguese (Brazil)</description>
+        <languageList>
+          <iso639Id>por</iso639Id>
+        </languageList>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>nodeadkeys</name>
+            <description>Portuguese (Brazil, no dead keys)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>dvorak</name>
+            <description>Portuguese (Brazil, Dvorak)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>nativo</name>
+            <description>Portuguese (Brazil, Nativo)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>nativo-us</name>
+            <description>Portuguese (Brazil, Nativo for US keyboards)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>nativo-epo</name>
+            <description>Esperanto (Brazil, Nativo)</description>
+            <languageList>
+              <iso639Id>epo</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>thinkpad</name>
+            <description>Portuguese (Brazil, IBM/Lenovo ThinkPad)</description>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>
+    <layout>
+      <configItem>
+        <name>usbr</name>
+        <shortDescription>enpt</shortDescription>
+        <description>English (BR)</description>
+        <languageList>
+          <iso639Id>eng</iso639Id>
+        </languageList>
+      </configItem>
+    </layout>
+  </layoutList>
+  <optionList>
+    <group allowMultipleSelection="true">
+      <!-- The key combination used to switch between groups -->
+      <configItem>
+        <name>grp</name>
+        <description>Switching to another layout</description>
+      </configItem>
+      <option>
+        <configItem>
+          <name>grp:switch</name>
+          <description>Right Alt (while pressed)</description>
+        </configItem>
+      </option>
+    </group>
+  </optionList>
+</xkbConfigRegistry>
