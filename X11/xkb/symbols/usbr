@@ -3,15 +3,22 @@ xkb_symbols "basic" {
 
     include "us(intl)"
     name[Group1]= "English (BR)";
+    name[Group2]= "Emacs";
 
  
-    key <AD03> { [ e,		    E,		     End			      ] };
-    key <AD10> { [ p,		    P,		     Up,              Prior	      ] };
-    key <AC01> { [ a,		    A,	             Home		              ] };
-    key <AC04> { [ f,		    F,		     Right			      ] };
-    key <AC10> { [ semicolon,       colon,           dead_circumflex, degree          ] };
-    key <AC11> { [ dead_acute,	    quotedbl,	     apostrophe	      		      ]	};
-    key <AB03> { [ c,		    C,		     ccedilla,	      Ccedilla	      ]	};
-    key <AB05> { [ b,		    B,		     Left	      		      ]	};
-    key <AB06> { [ n,		    N,		     Down,	      Next	      ] };
+    key <AC10> { symbols[Group1]= [ semicolon,       colon,           dead_circumflex, degree          ] };
+    key <AC11> { symbols[Group1]= [ dead_acute,	    quotedbl,	     apostrophe	      		      ]	};
+    key <AB03> { symbols[Group1]= [ c,		    C,		     ccedilla,	      Ccedilla	      ]	};
+    key <AD03> { symbols[Group2]= [ End   ] };
+    key <AD10> { symbols[Group2]= [ Up    ] };
+    key <AC01> { symbols[Group2]= [ Home  ] };
+    key <AC04> { symbols[Group2]= [ Right ] };
+    key <AB05> { symbols[Group2]= [ Left  ] };
+    key <AB06> { symbols[Group2]= [ Down  ] };
+    key <AB08> { symbols[Group2]= [ Prior ] };
+    key <AB09> { symbols[Group2]= [ Next  ] };
+    key <CAPS> {
+        type= "PC_ALT_LEVEL2",
+        symbols[Group1]= [     Mode_switch,       Caps_Lock ]
+    };
 };
